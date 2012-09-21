@@ -23,7 +23,7 @@
  */	
 if ( ! function_exists('facebook_count'))
 {
-	function facebook_count($fid, $numbers_displayed = 5)
+	function facebook_count($fid, $numbers_displayed = FALSE)
 	{
 		get_instance()->load->helper('file');
 		
@@ -92,7 +92,7 @@ if ( ! function_exists('facebook_count'))
  */	
 if ( ! function_exists('twitter_count'))
 {
-	function twitter_count($tid, $numbers_displayed = 5)
+	function twitter_count($tid, $numbers_displayed = FALSE)
 	{
 		get_instance()->load->helper('file');
 
