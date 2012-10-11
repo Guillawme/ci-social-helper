@@ -124,7 +124,7 @@ if ( ! function_exists('twitter_count'))
 			ini_set('user_agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1'); // Browser Simulation
 			$ch = curl_init();
 			$timeout = 0; // Timeout cURL
-			curl_setopt ($ch, CURLOPT_URL, 'http://twitter.com/users/show.json?screen_name='.$tid); // URL
+			curl_setopt ($ch, CURLOPT_URL, 'https://api.twitter.com/1/users/show.json?screen_name='.$tid); // URL
 			curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 			$data = curl_exec($ch);
